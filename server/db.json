@@ -1,0 +1,10 @@
+{
+  "estados": [
+    {
+      "id": 1,
+      "name": "Rondonia",
+      "capital": "Porto Velho",
+      "population": "7"
+    }
+  ]
+}

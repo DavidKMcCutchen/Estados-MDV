@@ -1,0 +1,18 @@
+<div class="container">
+    <div class="col-50" layout="row" layout-align="center center">
+      <estados-estados-list
+        [estados]="allEstados$ | async"
+        (selected)="selectEstado($event)"
+        (deleted)="deleteEstado($event)"
+      ></estados-estados-list>
+    </div>
+    <div class="col-50" layout="row" layout-align="center center">
+      <estados-estados-details
+        [estado]="selectedEstado$ | async"
+        (saved)="saveEstado($event)"
+        (cancelled)="resetEstado()"
+        [form]="form"
+      ></estados-estados-details>
+    </div>
+  </div>
+  
